@@ -15,7 +15,7 @@ const AuthPage = () => {
             <div className="flex space-x-4">
               <Link to="/auth/signup">
                 <button
-                  className="bg-white px-4 py-2 rounded text-3xl"
+                  className="bg-white px-4 py-2 rounded text-3xl bg-gradient-to-r from-teal-400 to-blue-500 hover:text-white "
                   onClick={() => setIsClickLSignup(true)}
                 >
                   Sign Up
@@ -23,7 +23,7 @@ const AuthPage = () => {
               </Link>
               <Link to="/auth/login">
                 <button
-                  className="bg-white px-4 py-2 rounded text-3xl"
+                  className="bg-white px-4 py-2 rounded text-3xl bg-gradient-to-r from-teal-400 to-blue-500 hover:text-white"
                   onClick={() => setIsClickLSignup(false)}
                 >
                   Log In
