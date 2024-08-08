@@ -7,15 +7,15 @@ const AuthPage = () => {
   const [isClickLSignup, setIsClickLSignup] = useState(true);
 
   return (
-    <div className="w-[100vw] h-[100vh] flex text-opacity-90 relative">
+    <div className="w-[100vw] h-[100vh] flex text-opacity-90 relative bg-slate-100">
       <Background>
-        <div className="relative w-[50vw] h-[40vh] bg-blue/50 shadow-2xl rounded-3xl flex p-9 justify-between backdrop-blur-sm z-10">
+        <div className="relative w-[50vw] h-[40vh] bg-blue/50 shadow-2xl rounded-3xl flex p-9 justify-between backdrop-blur-sm z-10 bg-white">
           <div className="relative z-10">
             <h1 className="text-5xl font-bold mb-8">Welcome</h1>
             <div className="flex space-x-4">
               <Link to="/auth/signup">
                 <button
-                  className="bg-white px-4 py-2 rounded text-3xl bg-gradient-to-r from-teal-400 to-blue-500 hover:text-white"
+                  className=" px-4 py-2 rounded text-3xl text-white bg-gray-400 hover:bg-gray-500"
                   onClick={() => setIsClickLSignup(true)}
                 >
                   Sign Up
@@ -23,7 +23,7 @@ const AuthPage = () => {
               </Link>
               <Link to="/auth/login">
                 <button
-                  className="bg-white px-4 py-2 rounded text-3xl bg-gradient-to-r from-teal-400 to-blue-500 hover:text-white"
+                  className=" px-4 py-2 rounded text-3xl text-white bg-gray-400 hover:bg-gray-500"
                   onClick={() => setIsClickLSignup(false)}
                 >
                   Log In
