@@ -1,33 +1,46 @@
+import React from "react";
+
 interface FormProps {
   isClickSignup: boolean;
 }
 
 const Form: React.FC<FormProps> = ({ isClickSignup }) => {
-  console.log(isClickSignup);
   return (
-    <form className=" flex flex-col text-2xl  border-sky-100 rounded">
+    <form className="flex flex-col text-lg border border-sky-200 p-6 rounded-lg bg-white shadow-md max-w-md mx-auto">
       {isClickSignup && (
         <>
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name" className="mb-2 font-medium text-gray-700">
+            Name
+          </label>
           <input
             type="text"
             id="name"
-            className="border border-sky-100 rounded"
+            className="mb-4 p-2 border border-sky-300 rounded focus:outline-none focus:ring-2 focus:ring-sky-500"
           />
         </>
       )}
-      <label htmlFor="email">Email</label>
+      <label htmlFor="email" className="mb-2 font-medium text-gray-700">
+        Email
+      </label>
       <input
         type="email"
         id="email"
-        className="border border-sky-100 rounded"
+        className="mb-4 p-2 border border-sky-300 rounded focus:outline-none focus:ring-2 focus:ring-sky-500"
       />
-      <label htmlFor="password">Password</label>
+      <label htmlFor="password" className="mb-2 font-medium text-gray-700">
+        Password
+      </label>
       <input
-        type="Password"
+        type="password"
         id="password"
-        className="border border-sky-100 rounded"
+        className="mb-4 p-2 border border-sky-300 rounded focus:outline-none focus:ring-2 focus:ring-sky-500"
       />
+      <button
+        type="submit"
+        className="p-2 bg-sky-500 text-white rounded hover:bg-sky-600 transition duration-300"
+      >
+        Submit
+      </button>
     </form>
   );
 };
