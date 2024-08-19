@@ -9,8 +9,8 @@ const AuthPage = () => {
   return (
     <div className="w-screen h-screen flex justify-center items-center bg-gray-100 relative">
       <Background>
-        <div className="relative w-[80vw] max-w-4xl bg-white shadow-lg rounded-3xl flex flex-col md:flex-row p-8 md:p-12 justify-between items-center backdrop-blur-sm z-10">
-          <div className="relative z-10 flex flex-col items-start w-full md:w-1/2 mb-8 md:mb-0">
+        <div className="relative w-[80vw] max-w-4xl bg-white shadow-lg rounded-3xl flex  justify-around items-center  z-10">
+          <div className="relative z-10 flex flex-col items-start ">
             <h1 className="text-4xl font-bold mb-6 text-gray-900">Welcome</h1>
             <div className="flex space-x-4 mb-6">
               <Link to="/auth/signup">
