@@ -1,6 +1,7 @@
 import "@/App.css";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import AuthPage from "@/pages/auth/index";
+import AuthPage from "./pages/auth/AuthPage";
+// import AuthPage from "@/pages/auth/index";
 
 function App() {
   return (
