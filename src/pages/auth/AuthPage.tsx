@@ -10,35 +10,47 @@ const AuthPage: FC = () => {
   return (
     <>
       <div className="w-screen h-screen flex flex-col bg-black">
-        <div className="basis-1/3 bg-transparent"></div>
-        <div className="basis-2/3 bg-bg_light_grey rounded-tl-5xl">
-          <h2 className="text-2xl font-bold text-center mb-6">Login</h2>
-
-          <Link to="/auth/login">
-            <button
-              className={`px-6 py-3 rounded text-xl font-semibold transition-colors ${
-                !isClickLSignup
-                  ? "bg-blue-600 text-white"
-                  : "bg-gray-300 text-gray-800 hover:bg-gray-400"
-              }`}
-              onClick={() => setIsClickLSignup(false)}
-            >
-              Log In
-            </button>
-          </Link>
+        <div className="basis-1/3 bg-transparent flex items-center justify-center">
+          <div className="w-20 h-20 rounded-tl-lg rounded-br-lg rounded-bl-lg bg-bg_light_grey flex items-center justify-center">
+            <img
+              src="/src/assets/bg-megaphone.png"
+              alt="background image"
+              className=""
+            />
+          </div>
+        </div>
+        <div className="basis-2/3 bg-bg_light_grey rounded-tl-5xl flex flex-col items-center justify-center gap-6">
+          <h2 className="text-2xl font-bold text-center">
+            {isClickLSignup ? "Sign up" : "Login"}
+          </h2>
           <Form isClickSignup={isClickLSignup} />
-          <p>
-            Don't have any account?{" "}
-            <Link to="/auth/signup">
-              <button
-                className={`text-gray-800 hover:text-medium_lavender"
+          {isClickLSignup ? (
+            <p>
+              Already have any account?{" "}
+              <Link to="/auth/login">
+                <button
+                  className={`text-gray-800 hover:text-medium_lavender"
                 }`}
-                onClick={() => setIsClickLSignup(true)}
-              >
-                Sign Up
-              </button>
-            </Link>
-          </p>
+                  onClick={() => setIsClickLSignup(false)}
+                >
+                  Sign In
+                </button>
+              </Link>
+            </p>
+          ) : (
+            <p>
+              Don't have any account?{" "}
+              <Link to="/auth/signup">
+                <button
+                  className={`text-gray-800 hover:text-medium_lavender"
+                }`}
+                  onClick={() => setIsClickLSignup(true)}
+                >
+                  Sign Up
+                </button>
+              </Link>
+            </p>
+          )}
         </div>
       </div>
     </>
