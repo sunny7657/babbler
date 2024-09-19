@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 24 24">
+  <defs>
+    <symbol id="emptyMessage" viewBox="0 0 24 24">
+      <path fill="none" d="M0 0h24v24H0z"/>
+      <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5" d="M13.2 21.6c1.462 0 8.4.152 9.6-2.4.607-1.291-3.47-1.292-2.4-3.6a9.714 9.714 0 0 0 1.2-3.6 9.6 9.6 0 1 0-19.2 0c0 5.3 4.3 9.6 10.8 9.6Z" data-name="Oval 3"/>
+    </symbol>
+ </defs>
+</svg>

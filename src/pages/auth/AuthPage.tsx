@@ -12,11 +12,9 @@ const AuthPage: FC = () => {
       <div className="w-screen h-screen flex flex-col bg-black">
         <div className="basis-1/3 bg-transparent flex items-center justify-center">
           <div className="w-20 h-20 rounded-tl-lg rounded-br-lg rounded-bl-lg bg-bg_light_grey flex items-center justify-center">
-            <img
-              src="/src/assets/bg-megaphone.png"
-              alt="background image"
-              className=""
-            />
+            <svg>
+              <use href={`/images/icons.svg#emptyMessage`}></use>
+            </svg>
           </div>
         </div>
         <div className="basis-2/3 bg-bg_light_grey rounded-tl-5xl flex flex-col items-center justify-center gap-6">
